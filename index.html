@@ -66,19 +66,8 @@
     // Descending (3 2 1) || desc
     itemOrder: "desc",
 
-    // If you're hosting images to your site, please fill this out with
-    // the path to your folder. Note that the 'Images' column must be
-    // removed from the Google Sheet.
-    // i.e. imgs/ml-images
-    imageFolder: "",
-
     // Columns the search looks through by default
-    searchParams: ['id', 'owner', 'artist', 'designer'],
-
-    // Creates 1 URL parameter that will filter the list based on a
-    // column of your choosing.
-    urlFilterParam: 'species',
-
+    searchParams: ['id', 'owner', 'artist', 'designer', 'rarity'],
     };
   </script>
 
@@ -130,12 +119,6 @@
   <-- 
   <-------------------------------------------------------------------- -->
   <div class="container masterlist-container d-flex flex-column py-md-5 py-4">
-
-    <!-- URL Param Filter Buttons Render
-    ------------------------------------------------------------------- -->
-    <div class="card p-4 mb-4" style="display:none;" id="filter-buttons">
-      <ul class="row no-gutters list list-unstyled m-n2"></ul>
-    </div>
 
 
     <!-- Gallery Container
